@@ -1,0 +1,85 @@
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Tags</title>
+ </head>
+ <body>
+    <header>
+        <h1>HTML5 Семантичні елементи</h1> <!--Як варіант - можна не робити header і h1 помістити в першу section
+        не знаю как краще в даному випадку-->
+    </header>
+    <main>
+        <section>
+            <p>Семантичний елемент чітко описує його значення
+                 як для браузера, так і для розробника.</p>
+            <p>Приклади <b>не семантичних</b>  елементів: &ltdiv&gt і &ltspan&gt- 
+                нічого не говорить про його вміст.</p>
+            <p>Приклади <b>семантичних</b>  елементів: &ltform&gt, &lttable&gt і &ltarticle&gt - 
+                чітко визначає його зміст.</p>
+        </section>
+            <h2>Підтримка браузерів</h2>
+            <img width="20%" src="./assets/img/1.png" alt="browsers">
+            <p>Семантичні елементи HTML5 підтримуються у всіх сучасних браузерах.</p>
+            <p>Крім того, ви можете "навчити" старих браузерів, як обробляти "невідомі елементи".</p>
+            <p>Прочитайте про це в <a href="https://habr.com/ru/post/169287/">підтримці браузера HTML5</a>.</p>
+        <section>
+        </section>
+            <h2>Нові семантичні елементи в HTML5</h2>
+            <p>HTML5 пропонує нові семантичні елементи для визначення різних частин веб-сторінки:</p>
+            <ul>
+                <li><a href="#section">&ltsection&gt</a></li>
+                <li><a href="#article">&ltarticle&gt</a></li>
+                <li><a href="#header">&ltheader&gt</a></li>
+                <li><a href="#footer">&ltfooter&gt</a></li>
+            </ul>
+        <section id="section">
+            <h2>HTML5 &ltsection&gt елемент</h2>
+            <p>Елемент &ltsection&gt визначає розділ в документі.</p>
+            <p>Згідно з документацією в3к'с HTML5: "розділ представляє собою
+            тематичну угруповання контенту, зазвичай з заголовком".</p>
+            <p>Домашня сторінка зазвичай може бути розділена на розділи для ознайомлення, 
+            змісту і контактної інформації.</p>
+            <img width="60%" src="./assets/img/2.png" alt="Example section">
+        </section>
+        <section id="article">
+            <h2>HTML5 &ltarticle&gt елемент</h2>
+            <p>Елемент &ltarticle&gt визначає незалежний, автономний вміст.</p>
+            <p>Стаття повинна мати сенс самостійно, і вона повинна мати можливість
+                читати його незалежно від іншої частини веб-сайту.</p>
+            <p>Приклади того, де можна використовувати елемент &ltarticle&gt:</p>
+            <ul>
+                <li>Повідомлення на форумі</li>
+                <li>блозі</li>
+                <li>Газетна стаття</li>
+            </ul>
+            <img width="60%" src="./assets/img/3.png" alt="Example article">
+        </section>
+        <section id="header">
+            <h2>HTML5 &ltheader&gt елемент</h2>
+            <p>Елемент &ltheader&gtзадає заголовок для документа або розділу.</p>
+            <p>Елемент &ltheader&gt повинен використовуватися в якості контейнера для вступного змісту.</p>
+            <p>В одному документі може бути кілька елементів &ltheader&gt .</p>
+            <p>У наступному прикладі визначається заголовок для статті:</p>
+            <img width="60%" src="./assets/img/3.png" alt="Example header">
+        </section>
+        <section id="footer">
+            <h2>HTML5 &ltfooter&gt елемент</h2>
+            <p>Елемент &ltfooter&gt вказує нижній колонтитул для документа або розділу.</p>
+            <p>Нижній колонтитул зазвичай містить автора документа, інформацію про
+                авторське право, посилання на умови використання, контактні дані і т.д.</p>
+            <p>В одному документі може бути кілька елементів &ltfooter&gt</p>
+            <img width="60%" src="./assets/img/4.png" alt="Example footer">
+        </section>
+        <section>
+            <h2>Резюме</h2>
+            <iframe src="https://leratodos.github.io/Homework/Homework%20/01/index.html" width="100%" height="800px" frameborder="0"></iframe>
+            <h2>І як же ж без котиків</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Br0Dh6VeTCI" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+    </main>
+ </body>
+ </html>
