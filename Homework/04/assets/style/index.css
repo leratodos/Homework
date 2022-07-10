@@ -1,0 +1,163 @@
+body {
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+.header-menu nav {
+    width: 496px;   
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-menu {
+    border-bottom: 1px solid #828282;
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+    margin-top: 27px;
+}
+
+
+.header-menu a {
+    text-decoration: none;
+    color: #828282;
+}
+
+.header-menu a:first-child {
+    color: black;
+}
+
+
+.container {
+    width: 100%;
+    max-width: 970px;
+    margin: 0 auto;
+}
+
+
+h1 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 100px;
+}
+
+
+
+.aboutMe {
+    width: 480px;
+    margin: 0 auto;
+}
+ 
+.aboutMe .firstP {
+    width: 100%;
+}
+
+.aboutMe .secondP {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.aboutMe .thirdP {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.aboutMe p {
+    text-align: center;
+}
+
+#aboutMe {
+    background-color: #F6F6F6;
+}
+/*Як залити фон правильно?*/
+
+#skills>span {
+    display: block;
+    text-align: center;
+}
+
+#skills ul {
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+}
+
+#skills li {
+    width: 20%;
+}
+
+/*Якщо б замість списку та лішек зробити просто діви, було б простіше 
+їх привести в порядок, але зробила по аналогії як ми робили макет командами на уроці.
+Не знаю як вирівняти далі :( */
+#skills ul span {
+    margin: 0 auto;
+    color: #828282;
+    font-size: 14px;
+    font-weight: bold;
+    display: block;
+    padding-top: 25px;
+    text-align: center;
+}
+
+#skills ul {
+    padding: 57px 0 100px;
+
+}
+
+#portfolio span {
+    width: 200px;
+    font-size: 18px;
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 70px;
+    text-decoration: underline;
+}
+
+#contacts span {
+    display: block;
+    text-align: center;
+    width: 280px;
+    margin: 0 auto;
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    padding-top: 70px;
+    
+}
+
+.button a {
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    border-radius: 22px;
+    padding: 10px 16px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.socialMedia {
+    display: flex;
+    justify-content: space-between;
+    width: 310px;
+    margin: 0 auto;
+    padding: 30px;
+}
+
+#contacts span:last-child {
+    width: 200px;
+    color: #828282;
+    font-size: 14px;
+}
