@@ -1,13 +1,15 @@
 body {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 
 
 /*Питання:
 1. чи можна в футері та хеадері робити контейнери також?
-2. не вийшла секція About me
+2. в секції about me якійст марджин зайвий над паддінгом (місце під фото Дениса)
 3. не вийшло вирівняти в секції Skills у лішках оці іконки напис та зірочки*/
 
 .header-menu nav {
@@ -55,14 +57,14 @@ h2 {
     font-size: 34px;
     font-weight: bold;
     text-align: center;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 
 .aboutMe {
     width: 480px;
     margin: 0 auto;
-    margin-bottom: 200px;
+    padding-bottom: 100px;
 }
  
 .aboutMe .firstP {
@@ -86,7 +88,6 @@ h2 {
 #aboutMe {
     background-color: #F6F6F6;
 }
-
 
 
 #skills ul {
