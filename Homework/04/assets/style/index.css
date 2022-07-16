@@ -6,7 +6,9 @@ body, html {
     margin: 0;
     padding: 0;
 }
-
+body * {
+    box-sizing: border-box;
+}
 p {
     margin: 0;
 }
@@ -28,15 +30,18 @@ body {
     color: #070707;
 }
 
-.site-title {
-    font-weight: 700;
-}
 
 .container {
     width: 100%;
     max-width: 970px;
     margin: 0 auto;
 }
+
+section {
+    width: 100%;
+    padding: 100px 0;
+}
+
 
 /*header*/
 
@@ -68,71 +73,131 @@ body {
 
 /*main*/
 
-section {
-    width: 100%;
+#home {
+    padding: 0;
 }
 
 .general_title {
     font-size: 48px;
     font-weight: bold;
+    line-height: 1.35;
+    margin-bottom: 50px;
 }
 
-.section_title {
-    font-size: 34px;
-    font-weight: bold;
-    text-align: center;
-    padding-top: 100px;
-}
-
-
-.aboutMe {
-    width: 480px;
-    margin: 0 auto;
-    padding-bottom: 100px;
-}
- 
-.aboutMe .firstP {
+.hero_img {
     width: 100%;
-}
-
-.aboutMe .secondP {
-    width: 80%;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.aboutMe .thirdP {
-    width: 60%;
-    margin: 0 auto;
-    margin-top: 30px;
-}
-
-.aboutMe p {
-    text-align: center;
+    display: block;
 }
 
 #aboutMe {
     background-color: #F6F6F6;
 }
 
-#skills ul {
-    display: flex;
-    justify-content: space-between;
-    padding: 57px 0 100px;
+.section_title {
+    font-size: 34px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 1.35;
+    margin-top: 0;
+    margin-bottom: 50px;
 }
 
-#skills span:first-of-type {
-    display: block;
+.aboutMe {
+    width: 100%;
+    max-width: 480px;
+    margin: 0 auto;
+} 
+/*не розумію чому не влізло останнє слово it як в макеті*/
+
+.about_text {
+    font-size: 18px;
+    width: 100%;
+    max-width: 480px;;
+    line-height: 1.33;
+    margin: 0 auto;
     text-align: center;
+}
+
+.about_text:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.about_text span {
+    display: block;
+}
+
+.skill_item {
+    width: 100%;
+    max-width: 170px;
+}
+
+.skill_item:last-child .skill_img {
+    width: 58px;
+}
+
+.skills_text {
+    text-align: center;
+    font-size: 18px;
+    line-height: 1.35;
+    margin-bottom: 50px;
+}
+
+#skills ul {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 57px 0;
+}
+
+.skill_img img {
+    width: 100%;
+    max-width: 67px;
+    display: block;
     margin: 0 auto;
 }
 
-#skills ul span {
+.skill_img {
+    width: 80px;
+    margin: 0 auto 25px;
+}
+
+.skill_name {
     color: #828282;
     font-size: 14px;
     font-weight: bold;
+    max-width: 80px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.skill_name.long {
+    min-width: 100px;
+}
+
+.skill_name.long span {
     display: block;
-    padding-top: 25px;
+}
+
+.skill_rating {
+    font-size: 0;
+}
+
+.skill_star {
+    display: inline-block;
+    width: 26px;
+    height: 26px;
+    background-image: url(../img/star_active.png);
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.skill_star.grey {
+    background-image: url(../img/star_none_active.png);
+}
+
+.skill_star:not(:last-child) {
+    margin-right: 10px;
 }
 
 
@@ -140,24 +205,36 @@ section {
     background-color: #F6F6F6;
 }
 
-#portfolio span {
+.portfolio_text {
     width: 200px;
     font-size: 18px;
     display: block;
     text-align: center;
     margin: 0 auto;
-    padding-top: 40px;
-    padding-bottom: 70px;
+    padding: 40px 0 70px;
     text-decoration: underline;
 }
 
-#contacts span {
-    display: block;
-    text-align: center;
-    width: 280px;
-    margin: 0 auto;
+.portfolio_text:last-child {
+    padding-bottom: 0;
 }
 
+.contacts_text {
+    padding: 0;
+}
+
+.contacts_text {
+    font-size: 18px;
+    width: 100%;
+    max-width: 290px;;
+    line-height: 1.33;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contacts_text {
+    display: block;
+}
 .button {
     display: flex;
     justify-content: center;
@@ -173,19 +250,31 @@ section {
     padding: 10px 16px;
     font-size: 18px;
     font-weight: bold;
+    margin-bottom: 30px;
 }
 
 .socialMedia {
     display: flex;
     justify-content: space-between;
     width: 310px;
-    margin: 0 auto;
-    padding: 30px;
+    margin: 0 auto 60px;
 }
 
-#contacts span:last-child {
-    width: 200px;
-    color: #828282;
+.last_text {
     font-size: 14px;
-    padding: 60px 0 100px;
+    width: 100%;
+    max-width: 220px;
+    color: #828282;
+    margin: 0 auto;
+    text-align: center;
+    padding: 0;
 }
+
+.last_text span {
+    display: block;
+}
+
+
+*/
+
+/*Зробити картки та p span розмістити*/
