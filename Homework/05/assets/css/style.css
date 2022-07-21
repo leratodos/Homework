@@ -74,6 +74,7 @@ select {
     -webkit-appearance: none;
     -moz-appearance: none;
     padding: 8px;
+    cursor: pointer;
  }
 
 /*Body*/
@@ -117,8 +118,6 @@ select {
     margin-left: 20px;
 }
  
-/*
-Все поломалось :(}*/
 .gender_wrapper input[type=radio] {
     opacity: 0;
     width: 0;
@@ -126,18 +125,15 @@ select {
 }
 
 input[type=radio]:checked + .fake_radio {
-    background-color: #007BFF;
+ 
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    border: 7px solid #007BFF;
+    border-radius: 50%;
+    margin-right: 4px;
 }
 
-input[type=radio]:checked + .fake_radio::after {
-    content: '';
-    display: flex;
-    width: 3px;
-    height: 3px;
-    background-color: #007BFF;
-    align-items: center;
-    justify-content: center;
-}
 
 .fake_radio {
     width: 20px;
@@ -145,6 +141,7 @@ input[type=radio]:checked + .fake_radio::after {
     border: 1px solid #E4E4E4;
     border-radius: 50%;
     display: inline-block;
+    margin-right: 4px;
 }
 
 .location_wrapper {
