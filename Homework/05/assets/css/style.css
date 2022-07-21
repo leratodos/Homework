@@ -124,6 +124,10 @@ select {
     height: 0;
 }
 
+.gender_wrapper label {
+    cursor: pointer;
+}
+
 input[type=radio]:checked + .fake_radio {
  
     display: inline-block;
