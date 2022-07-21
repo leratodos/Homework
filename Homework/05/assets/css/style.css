@@ -248,6 +248,21 @@ input[type=file]::-webkit-file-upload-button {
     color: #969696;
 }
 
+.trash {
+    width: 30px;
+    height: 30px;
+    border-radius: 5px; 
+    border: 1px solid #E4E4E4;
+    margin-top: 7px;
+    margin-left: 5px;
+    background-color: #FFFFFF;
+}
+
+.trash img {
+    width: 100%;
+}
+
+
 .name_wrapper,.email_wrapper,.gender_wrapper,.location_wrapper,
 .numbers_wrapper,.name_mail_wrapper {
     margin-bottom: 20px;
