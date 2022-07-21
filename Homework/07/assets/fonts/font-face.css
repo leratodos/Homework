@@ -4,8 +4,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/pt-sans-v17-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/pt-sans-v17-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./pt-sans-v17-latin/pt-sans-v17-latin-regular.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./pt-sans-v17-latin/pt-sans-v17-latin-regular.woff2') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   /* francois-one-regular - latin */
@@ -14,8 +14,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/francois-one-v20-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/francois-one-v20-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./francois-one-v20-latin/francois-one-v20-latin-regular.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./francois-one-v20-latin/francois-one-v20-latin-regular.woff2') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   /* staatliches-regular - latin */
@@ -24,8 +24,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/staatliches-v11-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/staatliches-v11-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./staatliches-v11-latin/staatliches-v11-latin-regular.woff') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./staatliches-v11-latin/staatliches-v11-latin-regular.woff2') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
 
   /* tourney-regular - latin */
@@ -34,8 +34,8 @@
     font-style: normal;
     font-weight: 400;
     src: local(''),
-         url('../fonts/tourney-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/tourney-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./tourney-v7-latin/tourney-v7-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./tourney-v7-latin/tourney-v7-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
   /* tourney-600 - latin */
   @font-face {
@@ -43,6 +43,6 @@
     font-style: normal;
     font-weight: 600;
     src: local(''),
-         url('../fonts/tourney-v7-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-         url('../fonts/tourney-v7-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+         url('./tourney-v7-latin/tourney-v7-latin-600.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('./tourney-v7-latin/tourney-v7-latin-600.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
   }
