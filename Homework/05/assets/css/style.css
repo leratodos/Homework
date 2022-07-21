@@ -217,18 +217,20 @@ input[type=radio]:checked + .fake_radio {
     max-width: 173px;
 }
 
-input[type=file] {
-    width: 100%;
-    height: 100%;
-    max-width: 138px;
-    max-height: 30px;
-    margin-bottom: 10px;
+.download_file {
+    width: 138px;
+    height: 30px;
+    border-radius: 5px;
+    display: flex;
+    cursor: pointer;
+    border: 1px solid #E4E4E4;
+    margin: 10px 9px 9px 0;
 }
 
-input[type=file]::-webkit-file-upload-button {
+input[type=file] {
     opacity: 0;
     width: 0;
-    height: 0;
+    height: 0;   
 }
 
 .camera_icon {
@@ -253,7 +255,7 @@ input[type=file]::-webkit-file-upload-button {
     height: 30px;
     border-radius: 5px; 
     border: 1px solid #E4E4E4;
-    margin-top: 7px;
+    margin-top: 10px;
     margin-left: 5px;
     background-color: #FFFFFF;
 }
