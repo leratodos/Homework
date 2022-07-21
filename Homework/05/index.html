@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/fonts/roboto/font-face.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Web Form</title>
+</head>
+<body>
+    <div class="container">
+        <form class="form_create" action="#" method="get">
+            <h2 class="form_title">Create an Account</h2>
+
+            <div class="name_wrapper">
+                <div class="name_section">
+                    <label class="firstname" for="firstname">First Name</label>
+                    <input type="text" name="firstname">
+                </div>   
+                <div class="lname_section">
+                    <label class="lastname" for="lastname">Last Name</label>
+                    <input type="text" name="lastname">
+                </div>
+            </div>
+
+            <div class="email_wrapper">
+                <label class="email" for="email">E-mail</label>
+                <input type="email" name="email">
+                <p class="email_notice">We'll never share your email with anyone else.</p>
+            </div>
+
+            <div class="gender_wrapper">
+                <label class="gender">
+                    <input type="radio" name="gender" value="male" checked>
+                    <span class="fake_radio"></span>Male
+                    <input type="radio" name="gender" value="female">
+                    <span class="fake_radio"></span>Female
+                </label>
+            </div>
+
+            <div class="location_wrapper">
+                <div class="country_section">
+                    <label class="country" for="country">Country</label>
+                    <select name="country" id="country">
+                        <option selected disabled>Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <span class="arrows_icon">
+                        <img src="./assets/img/arrows.png" alt="">
+                    </span>
+                </div>
+                <div class="city_section">
+                    <label class="city" for="city">City</label>
+                    <input type="text" name="city">
+                </div>
+            </div>
+
+            <div class="submit_button">
+                <input type="submit" value="Sign Up">
+            </div>
+
+            <div class="links_wrapper">
+                <div class="rules_section">
+                    <p>By clicking the 'Sign Up' button, you confirm that you accept our <a href="#">Terms of Use</a> and <a href="#">Privacy Policy</a>.</p>
+                </div>
+                <div class="log_in">
+                    <span>Have an account?</span><a href="#">Log In</a>
+                </div>
+            </div>
+        </form>
+
+        <form class="form_profile" action="#" method="get">
+            <h2 class="form_title">Profile</h2>
+            <div class="avatar_wrapper">
+                <div class="avatar">
+                    <img src="./assets/img/1.png" alt="avatar">
+                </div>
+                <div class="input_file_wrapper">
+                    <label for="avatar">
+                        <input type="file" name="avatar">
+                        <span class="camera_icon">
+                            <img src="./assets/img/camera-svgrepo-com.svg" alt="">
+                        </span>
+                    </label>
+                    <span class="mb">Up to 1 MB (300x300 px)</span>
+                </div>
+            </div>
+           
+            <div class="name_mail_wrapper">
+                <div class="name_section">
+                    <label class="name" for="name">Name</label>
+                    <input type="text" name="name">
+                </div>   
+                <div class="mail_section">
+                    <label class="mail" for="mail">E-mail</label>
+                    <input type="email" name="mail">
+                </div>
+            </div>
+
+            <div class="location_wrapper">
+                <div class="country_section">
+                    <label class="country" for="country">Country</label>
+                    <select name="country" id="country">
+                        <option selected disabled>Select</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                    </select>
+                    <span class="arrows_icon">
+                        <img src="./assets/img/arrows.png" alt="">
+                    </span>
+                </div>
+                <div class="city_section">
+                    <label class="city" for="city">City</label>
+                    <input type="text" name="city">
+                </div>
+            </div>
+
+            <div class="numbers_wrapper">
+                <div class="zip_code_section">
+                    <label class="zip_code" for="zip_code">Zip Code</label>
+                    <input type="text" name="zip_code">
+                </div>   
+                <div class="phone_number_section">
+                    <label class="phone_number" for="phone_number">Phone Number</label>
+                    <input type="text" name="phone_number">
+                </div>
+            </div>
+            <div class="submit_button">
+                <input type="submit" value="Update">
+            </div>
+        
+        </form>
+    </div>
+</body>
+</html>
+
+<!-- Здається, що код дуже громіздкий получился, немов багато зайвого написала. Питання:
+    1. Ширина форми виявилась меньше, ніж на макеті, хоча задавала все так як там, тому інпут файл не вліз гарно
+    2. Радіо пішли по одному місцю (я всі уроки дивилась, і той, що пропустила минулого разу. Робила по тому ж принципу, але я ще плохо орієнтуюсь, щоб знайти шо не так)
+    3. Кастом файлу - не вийшло прибрати текст і зробити мусорку, щоб видаляти файли. Також жму на іконку камери, а вона не працює
+
+    4. У другій формі спочатку я подумала, що треба писати новий код, навіть на ті блоки, які повторюються,
+адже ж ми нікому не довіряємо і може все зміниитись, але почалась плутанина, вигадувати нові
+нейми та класи на такі ж назви, і я бахнула старий код. Підкажи, будь ласка, що робити в таких випадках. 
+
+Якщо можна, я б хотіла ще подивитись як верстати такі форми, не окремо кожен інпут, а разом, як домашка. Якщо я не одна
+в цьому туплю, то може получитсья ще раз пройтись. Дякую) 

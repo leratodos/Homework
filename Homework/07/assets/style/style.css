@@ -1,0 +1,98 @@
+/*Не підключились шрифти, переподключала декілька разів, все перевірила
+інспектор їх бачить, наче вони є*/
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.wrapper_menu a {
+    text-decoration: none;
+    color: black;
+}
+
+.wrapper_menu {
+    width: 100%;
+    max-width: 400px;
+
+}
+
+.wrapper_menu ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section_title,.chapter {
+    display: inline-block;
+}
+
+.react_fundamentals ul {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;  
+}
+
+.text {
+    font-family: 'PT Sans';
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 48px;
+}
+
+.section_title {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase
+}
+
+.wrapper_menu li {
+    font-family: 'Staatliches';
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;  
+}
+
+.wrapper_menu li:first-child {
+    font-family: 'Tourney';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 18px;
+}
+
+
+
+.marked {
+    background-color: rgb(188, 187, 187);
+}
+
+.underlined {
+    text-decoration: underline;
+}

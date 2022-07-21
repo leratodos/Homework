@@ -1,0 +1,290 @@
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+/*Core styles*/
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    background-color: #E5E5E5;
+    color: #545454;
+}
+
+label {
+  font-size: 15px;
+  line height: 22px;
+}
+
+
+a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+p {
+    color: #969696;
+    font-size: 13px;
+    line height: 18px;
+}
+
+input[type=submit] {
+    display: block;
+    width: 100%;
+    background-color: #007BFF;
+    border-radius: 6px;
+    cursor: pointer;
+    border: none;
+    padding: 8px 10px;
+    font-weight: 500;
+    color: #fff;
+    font-size: 15px;    
+    line-height: 22px;
+    margin-bottom: 22px;
+}
+
+input[type=text],input[type=email],select,input[type=file] {
+    border: 1px solid #E4E4E4;
+    border-radius: 6px;    
+    display: block;
+    width: 100%;
+    height: 38px;
+    margin-top: 7px;
+}
+
+input:focus {
+    outline: none;
+    border: 1px solid #007BFF;
+    border-radius: 6px;
+}
+
+select {
+    font-size: 15px;
+    color: #969696;
+}
+
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 8px;
+ }
+
+/*Body*/
+
+.container {
+    background: #E5E5E5;
+    padding: 55px 135px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+.form_create, .form_profile {
+    width: 50%;
+    max-width: 570px;
+    background: #fff;
+    padding: 35px 35px 16px;
+    border-radius: 6px;
+}
+
+.form_title {
+    color: #1C1C1C;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.name_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_wrapper .name_section,.lname_section {
+    width: 50%;
+}
+
+.name_section {
+    margin-right: 12px;
+}
+
+.gender_wrapper input[type=radio]:last-child {
+    margin-left: 20px;
+}
+ 
+/*
+Все поломалось :(}*/
+.gender_wrapper input[type=radio] {
+    opacity: 1;
+    width: 0;
+    height: 0;
+}
+
+input[type=radio]:checked ~ .fake_radio {
+    background-color: #007BFF;
+}
+
+input[type=radio]:checked ~ .fake_radio::after {
+    content: '';
+    display: flex;
+    width: 3px;
+    height: 3px;
+    background-color: #007BFF;
+    align-items: center;
+    justify-content: center;
+}
+
+.fake_radio {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #E4E4E4;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.location_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.country_section {
+    position: relative;
+}
+.arrows_icon {
+    display: block;
+    width: 14px;
+    position: absolute;
+    top: 38px;
+    right: 10px;
+}
+
+.arrows_icon img {
+    width: 100%;
+}
+
+.location_wrapper .country_section,.city_section {
+    width: 50%;
+}
+
+.country_section {
+    margin-right: 12px;
+}
+
+.country_section .label,select {
+    display: block;
+}
+
+.rules_section {
+    width: 100%;
+    max-width: 400px;
+    font-size: 13px;
+    line-height: 18px;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.log_in {
+    display: inline-block;
+    width: 100%;
+    padding-top: 20px;
+    border-top: 1px solid #E4E4E4;
+    text-align: center;
+}
+
+.log_in span {
+    margin-right: 20px;
+}
+
+.avatar {
+    width: 80px;
+    height: 80px;
+}
+
+.avatar_wrapper {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.avatar img {
+    width: 100%;
+    border-radius: 50%;
+}
+
+.input_file_wrapper {
+    position: relative;
+    margin-left: 20px;
+    max-width: 173px;
+}
+
+input[type=file] {
+    width: 100%;
+    height: 100%;
+    max-width: 138px;
+    max-height: 30px;
+    margin-bottom: 10px;
+}
+
+input[type=file]::-webkit-file-upload-button {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.camera_icon {
+    display: block;
+    width: 14px;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+}
+
+.camera_icon img {
+    width: 100%;
+}
+
+.mb {
+    font-size: 13px;
+    color: #969696;
+}
+
+.name_wrapper,.email_wrapper,.gender_wrapper,.location_wrapper,
+.numbers_wrapper,.name_mail_wrapper {
+    margin-bottom: 20px;
+}
+
+
+.name_mail_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.name_mail_wrapper .name_section,.mail_section {
+    width: 50%;
+}
+
+.zip_code_section {
+    margin-right: 12px;
+}
+
+.numbers_wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers_wrapper .zip_code_section,.phone_number_section {
+    width: 50%;
+}
+
+.form_profile input[type=submit] {
+    width: 100%;
+    max-width: 150px;
+}
+
+
+
+
+
