@@ -149,6 +149,16 @@ section {
     max-width: 785px;
 }
 
+.background_img {
+    width: 100%;
+    max-width: 760px;
+    position: fixed;
+    top: 170px;
+    left: 729px;
+    z-index: -1;
+}
 
-/*
-1) Chapter - властивості як в фігмі, але вони завеликі і не достатньо зверху*/
+.background_img img {
+    width: 100%;
+}
+
