@@ -22,15 +22,26 @@ ul {
     padding-top: 16px;
 }
 
+a {
+    text-decoration: none;
+    color: black;
+}
+
 .menu {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 }
 
-.wrapper_menu a {
-    text-decoration: none;
-    color: black;
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+section {
+    margin-bottom: 70px;
 }
 
 .wrapper_menu {
@@ -43,6 +54,12 @@ ul {
     justify-content: space-between;
 }
 
+.content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 160px;
+}
+
 .section_title,.chapter {
     display: inline-block;
 }
@@ -52,6 +69,7 @@ ul {
     font-weight: 400;
     font-size: 28px;
     line-height: 48px;  
+
 }
 
 .text {
@@ -66,12 +84,35 @@ ul {
     max-width: 238px;
 }
 
+.strip  {
+    width: 100px;
+    height: 8px;
+    background-color: #000;
+}
+
 .section_title {
     font-family: 'Francois One';
     font-weight: 400;
     font-size: 36px;
     line-height: 48px;
     text-transform: uppercase;
+}
+
+.side_menu {
+    font-family: 'Francois One';
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 48px;
+    text-transform: uppercase;
+    margin-right: 40px;
+    background-color: #fff;
+    position: sticky;
+    top: 100px;
+}
+
+.side_menu li {
+    margin-bottom: 80px;
+    border-bottom: 1px solid #000;
 }
 
 .chapter {
@@ -96,8 +137,6 @@ ul {
     line-height: 18px;
 }
 
-
-
 .marked {
     background-color: rgb(188, 187, 187);
 }
@@ -105,3 +144,11 @@ ul {
 .underlined {
     text-decoration: underline;
 }
+
+.main_content {
+    max-width: 785px;
+}
+
+
+/*
+1) Chapter - властивості як в фігмі, але вони завеликі і не достатньо зверху*/
