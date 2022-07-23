@@ -19,6 +19,11 @@ ul {
     list-style: none;
 }
 
+h1, h2 {
+    padding: 0;
+    margin: 0;
+}
+
 
 
 /*Core styles*/
@@ -75,7 +80,7 @@ section {
 
 /*main*/
 
-#home {
+.home_section {
     padding: 0;
 }
 
@@ -91,7 +96,7 @@ section {
     display: block;
 }
 
-#aboutMe {
+.aboutMe_section {
     background-color: #F6F6F6;
 }
 
@@ -109,7 +114,6 @@ section {
     max-width: 480px;
     margin: 0 auto;
 } 
-/*не розумію чому не влізло останнє слово it як в макеті*/
 
 .about_text {
     font-size: 18px;
@@ -144,7 +148,7 @@ section {
     margin-bottom: 50px;
 }
 
-#skills ul {
+.skills_section ul {
     display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
@@ -174,7 +178,7 @@ section {
 }
 
 .skill_name.long {
-    min-width: 100px;
+    max-width: 100px;
 }
 
 .skill_name.long span {
@@ -203,12 +207,13 @@ section {
 }
 
 
-#portfolio {
+.portfolio_section {
     background-color: #F6F6F6;
 }
 
 .portfolio_text {
-    width: 200px;
+    width: 100%;
+    max-width: 200px;
     font-size: 18px;
     display: block;
     text-align: center;
@@ -276,7 +281,3 @@ section {
     display: block;
 }
 
-
-*/
-
-/*Зробити картки та p span розмістити*/
